@@ -7,7 +7,7 @@ class DirectoryHelperTask < Volt::Task
       contents << file
     end
     
-    DirectoryRearrangerTask.new.rearrange(contents)
+    DirectoryRearrangerTask.rearrange(contents)
     
     contents
   end
